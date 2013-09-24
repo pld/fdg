@@ -12,7 +12,8 @@
   (fn [state] (* 1/2 mass (square (:velocity state)))))
 
 (defn sphere->R3 [R]
-  "Transformation of coordinates from colatitude and longitude on the surface of the sphere to rectangular coordinates in the embedding space"
+  "Transformation of coordinates from colatitude and longitude on the surface
+   of the sphere to rectangular coordinates in the embedding space"
   (fn [state]
     (let [q (:coordinate state)
           theta (q 0)
